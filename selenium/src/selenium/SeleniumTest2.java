@@ -12,7 +12,7 @@ public class SeleniumTest2 {
 	public static void main(String[] args) {
 		
 		SeleniumTest2 selTest = new SeleniumTest2();
-		selTest.crawl();
+		selTest.login();
 		
 	}
 	
@@ -36,7 +36,8 @@ public class SeleniumTest2 {
 		
 		// Driver SetUp
 		ChromeOptions options = new ChromeOptions();
-		options.setCapability("ignoreProtextedModeSettings", true);
+		options.setCapability("ignoreProtectedModeSettings", true);
+		options.addArguments("headless"); // 웹 브라우저 비활성화
 		driver = new ChromeDriver(options);
 		
 		// 다음 포털 사이트 리뉴얼로 인해 로그인 페이지에서 테스트 진행
@@ -44,7 +45,7 @@ public class SeleniumTest2 {
 		base_url = "https://logins.daum.net/accounts/signinform.do";
 	}
 	
-	public void crawl() {
+	public void login() {
 		
 		try {
 			// get page (= 브라우저에서 url을 주소창에 넣은 후 request 한 것과 같다.)
