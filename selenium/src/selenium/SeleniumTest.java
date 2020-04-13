@@ -18,7 +18,7 @@ public class SeleniumTest {
 	
 	// Properties
 	public static final String WEB_DRIVER_ID = "webdriver.chrome.driver";
-	public static final String WEB_DRIVER_PATH = "./driver/chromedriver";
+	public static final String WEB_DRIVER_PATH = "driver/chromedriver";
 	
 	// 크롤링 할 URL
 	public String base_url;
