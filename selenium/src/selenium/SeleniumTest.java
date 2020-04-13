@@ -3,6 +3,7 @@ package selenium;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// 네이버 포털 사이트 크롤링
 public class SeleniumTest {
 
 	public static void main(String[] args) {
