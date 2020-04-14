@@ -57,7 +57,7 @@ By.xpath|XPath를 통해 요소를 찾는다.|findElement(/) / table / tbody / t
 - By.cssSelector()는 "contains(포함)" 기능을 지원하지 않는다.
 - WebElement 클래스를 사용하여 요소를 인스턴스화 할 수 있다.
 
-### 2.4 명령
+### 2.4. 명령
 - click()
   - 이 메소드는 적용 가능한 경우 새 페이지가 로드 될 때까지 자동으로 대기한다.
   - 클릭 할 요소가 표시 되어야 한다.(높이와 너비가 0이 아니여야 한다.)
@@ -94,7 +94,7 @@ By.xpath|XPath를 통해 요소를 찾는다.|findElement(/) / table / tbody / t
   - quit()
     - 모든 창을 닫는다.
 
-### 2.5 프레임 간 전환
+### 2.5. 프레임 간 전환
 ```Java
 public class PG4 {
 	
@@ -117,7 +117,7 @@ public class PG4 {
 }
 ```
 
-### 2.6 팝업 창 전환
+### 2.6. 팝업 창 전환
 ```Java
 public class PG5 {
 
