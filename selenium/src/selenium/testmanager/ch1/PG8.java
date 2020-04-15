@@ -25,7 +25,7 @@ public class PG8 {
 			System.out.println("alert is present!");
 		}
 		
-		// elementToBeClickable() - 요소가 표사되고 동시에 활성화 될 때까지 대기
+		// elementToBeClickable() - 요소가 표시되고 동시에 활성화 될 때까지 대기
 		WebElement txtUserName = myWaitVar.until(ExpectedConditions.elementToBeClickable(By.id("username")));
 		
 		// frameToBeAvailableAndSwitchToIt() - 지정된 프레임이 이미 사용 가능할 때가지 대기한 다음 자동으로 전환
