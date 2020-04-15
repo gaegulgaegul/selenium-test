@@ -22,7 +22,7 @@
   // Driver SetUp
   ChromeOptions options = new ChromeOptions();
   options.setCapability("ignoreProtextedModeSettings", true);
-  // 웹 브라우저를 띄우고 싶지 않으 경우 추가
+  // 웹 브라우저를 띄우고 싶지 않은 경우 추가
   options.addArguments("headless");
   driver = new ChromeDriver(options);
 
@@ -144,3 +144,11 @@ public class PG5 {
 
 }
 ```
+
+### 2.7. Form 액세스
+- WebElement
+  - findElement() : 단일 웹 요소를 찾아 WebElement로 반환
+  - findElements() : 로케이터 기준과 일치하는 List&lt;WebElement&gt;로 반환
+- 값 입력 및 삭제
+  - sendKeys() : 텍스트 입력 란을 찾아 값을 입력한다.
+  - clear() : 텍스트 입력 값을 삭제한다.
