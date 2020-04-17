@@ -8,8 +8,13 @@ public class global {
 	public static final String NAVER = "https://www.naver.com";
 	public static final String NAVER_LOGIN = "https://nid.naver.com/nidlogin.login";
 	
+	public static final String FACEBOOK_LOGIN = "http://www.facebook.com/login/identify?ctx=recover";
+	
 	public static final String EX_SELECTBOX = "http://www.homejjang.com/05/select.php";
 	public static final String EX_LOGIN = "http://demo.guru99.com/test/login.html";
 	public static final String EX_RADIO = "http://demo.guru99.com/test/radio.html";
+	public static final String EX_LINKTEXT = "http://demo.guru99.com/test/link.html";
+	public static final String EX_NEWTOURS = "http://demo.guru99.com/test/newtours/";
+	public static final String EX_BLOCK = "http://demo.guru99.com/test/block.html";
 	
 }
