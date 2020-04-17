@@ -152,3 +152,15 @@ public class PG5 {
 - 값 입력 및 삭제
   - sendKeys() : 텍스트 입력 란을 찾아 값을 입력한다.
   - clear() : 텍스트 입력 값을 삭제한다.
+
+### 2.8. SelectBox 제어
+- Select 클래스
+  - &lt;SELECT&gt; 요소를 제어하는데 사용되는 클래스
+
+메소드|설명
+---|---|
+selectByVisibleText()<br/>deselectByVisibleText()|매개 변수와 일치하는 텍스트를 가진 옵션을 선택/취소한다.
+selectByValue()<br/>deselectByValue()|'value'속성이 지정된 매개 변수와 일치하는 옵션을 선택/취소한다.
+selectByIndex()<br/>deselectByIndex()|매개 변수로 주어진 인덱스의 옵션을 선택/취소한다.
+isMultiple()|selectBox가 한번에 여러 항목을 선택할 수 있으면 true 아니면 flase
+deselectAll()|선택한 모든 항목을 지운다.(selectBox가 다중 선택을 지원한 경우만 가능하다.)
