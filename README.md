@@ -164,3 +164,12 @@ selectByValue()<br/>deselectByValue()|'value'속성이 지정된 매개 변수�
 selectByIndex()<br/>deselectByIndex()|매개 변수로 주어진 인덱스의 옵션을 선택/취소한다.
 isMultiple()|selectBox가 한번에 여러 항목을 선택할 수 있으면 true 아니면 flase
 deselectAll()|선택한 모든 항목을 지운다.(selectBox가 다중 선택을 지원한 경우만 가능하다.)
+
+### 2.9. 링크 제어
+- By.linkText(): 매개 변수와 링크 텍스트가 정확하게 일치되는 링크를 찾는다.
+- By.partialLinkText(): 매개 변수와 링크 텍스트가 부분 일치되는 링크를 찾는다.
+- 링크 매칭 시에 대소문자를 구별하여 매칭시킨다.
+- By.linkText() / By.partialLinkText() : 여러 링크 중 첫번째 일치되는 항목만 가져온다.
+- xpath / css 기반 위치 지정자 : 여러 링크가 있는 경우 일치하는 링크를 가져온다.
+- 이미지 링크에 접근하려면 By.cssSelector() 또는 By.xpath()를 사용한다.
+- 테이블에 접근하려면 By.xpath()를 사용한다.
