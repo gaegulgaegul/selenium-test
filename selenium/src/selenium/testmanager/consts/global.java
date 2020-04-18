@@ -17,4 +17,8 @@ public class global {
 	public static final String EX_NEWTOURS = "http://demo.guru99.com/test/newtours/";
 	public static final String EX_BLOCK = "http://demo.guru99.com/test/block.html";
 	
+	public static final String EX_TABLE1 = "page/ch4/test1.html";
+	public static final String EX_TABLE2 = "page/ch4/test2.html";
+	public static final String EX_TABLE3 = "http://newtours.demoaut.com/";
+	
 }
