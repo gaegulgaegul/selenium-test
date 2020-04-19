@@ -173,3 +173,21 @@ deselectAll()|선택한 모든 항목을 지운다.(selectBox가 다중 선택�
 - xpath / css 기반 위치 지정자 : 여러 링크가 있는 경우 일치하는 링크를 가져온다.
 - 이미지 링크에 접근하려면 By.cssSelector() 또는 By.xpath()를 사용한다.
 - 테이블에 접근하려면 By.xpath()를 사용한다.
+
+### 2.10. 마우스 및 키보드 이벤트 처리
+메소드|설명
+--|--|
+clickAndHold()|현재 마우스 위치에서 클릭하지 않는다.
+contextClick()|현재 마우스 위치에서 컨텍스트 클릭을 수행한다.
+doubleClick()|현재 마우스 위치에서 더블 클릭한다.
+dragAndDrop(source, target)|지정된 'target'에 'source'를 드래그 앤 드랍한다.
+dragAndDrop(source, x-offset, y-offser)|지정된 오프셋 만큼 이동하여 'source'를 드래그 앤 드랍한다.
+keyDown(modifier_key)|키보드의 키 누름을 수행한다.
+keyUp(modifier_key)|키보드의 키 릴리즈를 수행한다.
+moveByOffset(x-offset,y-offset)|지정된 오프셋만큼 마우스를 현재 위치(또는 0,0)에서 이동한다.
+moveToElement(toElement)|요소의 가운데로 마우스를 이동한다.
+release()|현재 마우스 위치에서 마우스 왼쪽 버튼을 놓는다.
+sendKeys(onElement, charsequence)|태그에 값을 입력한다.
+
+- 특수 키보드 및 마우스 이벤트 처리는 AdvancedUserInteractions API를 사용하여 수행된다.
+- 자주 사용되는 키보드 및 마우스 이벤트 :  doubleClick(), keyUp(), dragAndDropBy(), contextClick(), sendKeys()
