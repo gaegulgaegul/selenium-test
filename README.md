@@ -165,7 +165,7 @@ selectByIndex()<br/>deselectByIndex()|매개 변수로 주어진 인덱스의 �
 isMultiple()|selectBox가 한번에 여러 항목을 선택할 수 있으면 true 아니면 flase
 deselectAll()|선택한 모든 항목을 지운다.(selectBox가 다중 선택을 지원한 경우만 가능하다.)
 
-### 2.9. 링크 제어
+### 2.9. 링크 및 테이블 접근 제어
 - By.linkText(): 매개 변수와 링크 텍스트가 정확하게 일치되는 링크를 찾는다.
 - By.partialLinkText(): 매개 변수와 링크 텍스트가 부분 일치되는 링크를 찾는다.
 - 링크 매칭 시에 대소문자를 구별하여 매칭시킨다.

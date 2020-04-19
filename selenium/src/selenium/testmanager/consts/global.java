@@ -9,6 +9,7 @@ public class global {
 	public static final String NAVER_LOGIN = "https://nid.naver.com/nidlogin.login";
 	
 	public static final String FACEBOOK_LOGIN = "http://www.facebook.com/login/identify?ctx=recover";
+	public static final String FACEBOOK = "http://www.facebook.com/";
 	
 	public static final String EX_SELECTBOX = "http://www.homejjang.com/05/select.php";
 	public static final String EX_LOGIN = "http://demo.guru99.com/test/login.html";
