@@ -191,3 +191,8 @@ sendKeys(onElement, charsequence)|태그에 값을 입력한다.
 
 - 특수 키보드 및 마우스 이벤트 처리는 AdvancedUserInteractions API를 사용하여 수행된다.
 - 자주 사용되는 키보드 및 마우스 이벤트 :  doubleClick(), keyUp(), dragAndDropBy(), contextClick(), sendKeys()
+
+### 2.11. 파일 업로드 및 다운로드
+- WebDriver에서 파일 업로드는 단순히 파일 태그에서 sendKeys()를 사용하여 파일의 경로를 입력한다.
+- WebDriver는 자체적인 파일 다운로드를 자동화 할 수 없다.
+- WebDriver를 사용하여 파일 다운로드 하는 가장 쉬운 방법은 wget을 사용하는 것이다.
