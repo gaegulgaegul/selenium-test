@@ -19,6 +19,8 @@ public class global {
 	public static final String EX_BLOCK = "http://demo.guru99.com/test/block.html";
 	public static final String EX_UPLOAD = "http://demo.guru99.com/test/upload";
 	public static final String EX_DOWNLOAD = "http://demo.guru99.com/test/yahoo.html";
+	public static final String EX_TEST = "http://demo.guru99.com/test/";
+	public static final String EX_DATEPICKER = "http://demos.telerik.com/kendo-ui/datetimepicker/index";
 	
 	public static final String EX_TABLE1 = "page/ch4/test1.html";
 	public static final String EX_TABLE2 = "page/ch4/test2.html";
