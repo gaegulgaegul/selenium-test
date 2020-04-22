@@ -21,6 +21,8 @@ public class global {
 	public static final String EX_DOWNLOAD = "http://demo.guru99.com/test/yahoo.html";
 	public static final String EX_TEST = "http://demo.guru99.com/test/";
 	public static final String EX_DATEPICKER = "http://demos.telerik.com/kendo-ui/datetimepicker/index";
+	public static final String EX_DELETE_CUSTOMER = "http://demo.guru99.com/test/delete_customer.php";
+	public static final String EX_POPUP = "http://demo.guru99.com/popup.php";
 	
 	public static final String EX_TABLE1 = "page/ch4/test1.html";
 	public static final String EX_TABLE2 = "page/ch4/test2.html";
