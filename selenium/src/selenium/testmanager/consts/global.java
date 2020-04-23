@@ -24,6 +24,9 @@ public class global {
 	public static final String EX_DELETE_CUSTOMER = "http://demo.guru99.com/test/delete_customer.php";
 	public static final String EX_POPUP = "http://demo.guru99.com/popup.php";
 	
+	public static final String EX_DYNAMIC_TABLE1 = "http://money.rediff.com/gainers/dailygroupa?";
+	public static final String EX_DYNAMIC_TABLE2 = "http://demo.guru99.com/test/table.html";
+	
 	public static final String EX_TABLE1 = "page/ch4/test1.html";
 	public static final String EX_TABLE2 = "page/ch4/test2.html";
 	public static final String EX_TABLE3 = "http://newtours.demoaut.com/";
