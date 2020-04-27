@@ -33,4 +33,6 @@ public class global {
 	public static final String EX_TABLE2 = "page/ch4/test2.html";
 	public static final String EX_TABLE3 = "http://newtours.demoaut.com/";
 	
+	public static final String EX_PAGE = "http://demo.guru99.com/V4/";
+	
 }
