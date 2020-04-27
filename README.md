@@ -196,3 +196,12 @@ sendKeys(onElement, charsequence)|태그에 값을 입력한다.
 - WebDriver에서 파일 업로드는 단순히 파일 태그에서 sendKeys()를 사용하여 파일의 경로를 입력한다.
 - WebDriver는 자체적인 파일 다운로드를 자동화 할 수 없다.
 - WebDriver를 사용하여 파일 다운로드 하는 가장 쉬운 방법은 wget을 사용하는 것이다.
+
+### 2.12. POM 및 PageFactory
+- POM(Page Object Model)
+  - 웹 UI 요소에 대한 객체 저장소를 만드는 디자인 패턴
+  - 객체 저장소가 테스트 케이스와 독립적이므로 다른 툴을 사용하여 동일한 목적을 위해 동일한 객체저장소를 사용할 수 있다.
+- PageFactory
+  - Selenium WebDriver를 위해 내장된 POM 개념을 최적화한다.
+  - @FindBy 어노테이션을 사용하여 tagName, partialLinkText, name, linkText, id, css, className, xpath를 속성으로 사용한다.
+  - initElements 메서드를 이용하여 웹 요소를 초기화한다.
