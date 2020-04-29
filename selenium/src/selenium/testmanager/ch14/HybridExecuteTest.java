@@ -14,7 +14,7 @@ public class HybridExecuteTest {
 	
 	WebDriver driver = null;
 	
-	@Test(dataProvider="hybridData")
+//	@Test(dataProvider="hybridData")
 	public void testLogin(String testcaseName, String keyword, String  objectName, String objectType, String value) throws Exception {
 		if(testcaseName != null && testcaseName.length() != 0) {
 			driver = new ChromeDriver();
@@ -27,7 +27,7 @@ public class HybridExecuteTest {
 		operation.perform(allObjects, keyword, objectName, objectType, value);
 	}
 	
-	@DataProvider(name="hybridData")
+//	@DataProvider(name="hybridData")
 	public Object[][] getDataFormDataprovider() throws IOException {
 		Object[][] object = null;
 		ReadGuru99ExcelFile file = new ReadGuru99ExcelFile();
