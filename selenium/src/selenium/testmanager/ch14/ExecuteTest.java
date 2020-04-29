@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// 키워드 기반 테스트 프레임워크
 public class ExecuteTest {
 	
 	@Test
