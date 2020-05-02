@@ -35,4 +35,6 @@ public class global {
 	
 	public static final String EX_PAGE = "http://demo.guru99.com/V4/";
 	
+	public static final String EX_ROBOT = "http://spreadsheetpage.com/index.php/file/C35/P10/";
+	
 }
