@@ -4,40 +4,37 @@ import java.util.Map;
 
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.google.common.collect.Maps;
 import com.selenium.signup.entity.Member;
-import com.selenium.signup.repository.MemberRepository;
+import com.selenium.signup.service.MemberService;
 
-import lombok.AllArgsConstructor;
-
-@AllArgsConstructor
 @Controller
 public class MemberController {
 	
-	private MemberRepository memebrRepositroy;
+	@Autowired
+	private MemberService memberService;
 	
-	@GetMapping("/")
+	@RequestMapping("/")
 	public String main() {
 		return "main";
 	}
 	
-	@GetMapping("/signup")
+	@RequestMapping("/signup")
 	public String signup() {
 		return "signup";
 	}
 	
-	@PostMapping("/doSignUp")
-	@ResponseBody
+	@RequestMapping(value="/doSignUp", method=RequestMethod.POST)
 	public Map<String,Object> doSignUp(@Valid Member member) {
 		Map<String,Object> resultMap = Maps.newHashMap();
 		System.out.println(member.toString());
 		try {
-			memebrRepositroy.save(member);
+			memberService.save(member);
 			resultMap.put("result", 1);
 		} catch(Exception e) {
 			resultMap.put("result", 99);
