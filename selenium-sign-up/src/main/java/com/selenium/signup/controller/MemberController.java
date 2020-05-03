@@ -2,10 +2,9 @@ package com.selenium.signup.controller;
 
 import java.util.Map;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -30,7 +29,7 @@ public class MemberController {
 	}
 	
 	@RequestMapping(value="/doSignUp", method=RequestMethod.POST)
-	public Map<String,Object> doSignUp(@Valid Member member) {
+	public Map<String,Object> doSignUp(@PathVariable("member") Member member) {
 		Map<String,Object> resultMap = Maps.newHashMap();
 		System.out.println(member.toString());
 		try {

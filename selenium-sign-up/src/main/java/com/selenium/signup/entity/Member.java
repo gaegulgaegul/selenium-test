@@ -22,6 +22,7 @@ import lombok.ToString;
 public class Member {
 	
 	@Id
+	@Column(name="EMAIL")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private String email;
 	
