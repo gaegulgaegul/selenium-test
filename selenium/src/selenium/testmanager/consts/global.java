@@ -37,4 +37,6 @@ public class global {
 	
 	public static final String EX_ROBOT = "http://spreadsheetpage.com/index.php/file/C35/P10/";
 	
+	public static final String EX_AJAX = "http://demo.guru99.com/test/ajax.html";
+	
 }
