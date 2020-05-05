@@ -213,3 +213,7 @@ sendKeys(onElement, charsequence)|태그에 값을 입력한다.
   - Implicit Wait
   - Explicit Wait
 - Ajax는 다른 인코딩이나 직렬화 기술을 사용하여 POST 데이터를 전달하기 때문에 자동화 된 테스트 요청을 작성하는 테스트 도구에서는 어려울 수 있다.
+
+### 2.14. JavaScriptExecutor
+- runscript, ExecuteAsyncScript 두 가지 메서드 제공
+- 셀레니움의 문제로 인해 요소를 가지고 올 수 없는 경우, JavaScriptExecutor을 통해 요소를 클릭한다.
