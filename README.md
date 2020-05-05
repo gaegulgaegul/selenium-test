@@ -205,3 +205,11 @@ sendKeys(onElement, charsequence)|태그에 값을 입력한다.
   - Selenium WebDriver를 위해 내장된 POM 개념을 최적화한다.
   - @FindBy 어노테이션을 사용하여 tagName, partialLinkText, name, linkText, id, css, className, xpath를 속성으로 사용한다.
   - initElements 메서드를 이용하여 웹 요소를 초기화한다.
+
+### 2.13. Ajax
+- Ajax를 사용하면 웹 페이지가 전체 페에지를 다시 로드 하지 않고 서버에서 소향의 데이터를 검색할 수 있다.
+- Ajax를 테스트 하려면 대기 메서드가 적용되어야 한다.
+  - Thread.sleep
+  - Implicit Wait
+  - Explicit Wait
+- Ajax는 다른 인코딩이나 직렬화 기술을 사용하여 POST 데이터를 전달하기 때문에 자동화 된 테스트 요청을 작성하는 테스트 도구에서는 어려울 수 있다.
