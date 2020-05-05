@@ -39,4 +39,6 @@ public class global {
 	
 	public static final String EX_AJAX = "http://demo.guru99.com/test/ajax.html";
 	
+	public static final String EX_JS = "http://moneyboats.com/";
+	
 }
