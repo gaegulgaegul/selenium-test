@@ -44,4 +44,6 @@ public class global {
 	public static final String EX_TOOLTIP1 = "http://demo.guru99.com/test/social-icon.html";
 	public static final String EX_TOOLTIP2 = "http://demo.guru99.com/test/tooltip.html";
 	
+	public static final String EX_BROKENLINKS = "http://www.zlti.com";
+	
 }
