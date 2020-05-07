@@ -46,4 +46,6 @@ public class global {
 	
 	public static final String EX_BROKENLINKS = "http://www.zlti.com";
 	
+	public static final String EX_COOKIE = "http://demo.guru99.com/test/cookie/selenium_aut.php";
+	
 }
