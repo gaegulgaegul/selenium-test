@@ -48,4 +48,6 @@ public class global {
 	
 	public static final String EX_COOKIE = "http://demo.guru99.com/test/cookie/selenium_aut.php";
 	
+	public static final String EX_DRAG_AND_DROP = "http://demo.guru99.com/test/drag_drop.html";
+	
 }
