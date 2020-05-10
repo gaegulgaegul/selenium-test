@@ -50,4 +50,7 @@ public class global {
 	
 	public static final String EX_DRAG_AND_DROP = "http://demo.guru99.com/test/drag_drop.html";
 	
+	public static final String EX_SCROLL1 = "http://demo.guru99.com/test/guru99home/";
+	public static final String EX_SCROLL2 = "http://demo.guru99.com/test/guru99home/scrolling.html";
+	
 }
