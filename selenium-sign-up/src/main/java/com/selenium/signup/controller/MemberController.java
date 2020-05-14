@@ -4,9 +4,8 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.common.collect.Maps;
 import com.selenium.signup.entity.Member;
@@ -18,18 +17,19 @@ public class MemberController {
 	@Autowired
 	private MemberService memberService;
 	
-	@RequestMapping("/")
+	@GetMapping("/")
 	public String main() {
 		return "main";
 	}
 	
-	@RequestMapping("/signup")
+	@GetMapping("/signup")
 	public String signup() {
 		return "signup";
 	}
 	
-	@RequestMapping(value="/doSignUp", method=RequestMethod.POST)
-	public Map<String,Object> doSignUp(@PathVariable("member") Member member) {
+	@GetMapping("/doSignUp")
+	@ResponseBody
+	public Map<String,Object> doSignUp(Member member) {
 		Map<String,Object> resultMap = Maps.newHashMap();
 		System.out.println(member.toString());
 		try {

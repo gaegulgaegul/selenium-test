@@ -63,7 +63,7 @@ function doSignUp(e) {
 	
 	$.ajax({
 		url: '/doSignUp',
-		type: 'POST',
+		type: 'GET',
 		contentType:'application/json',
 		dataType: "json",
 		data: JSON.springify(member),
