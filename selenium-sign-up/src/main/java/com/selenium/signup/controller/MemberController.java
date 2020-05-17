@@ -5,6 +5,8 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.common.collect.Maps;
@@ -27,7 +29,7 @@ public class MemberController {
 		return "signup";
 	}
 	
-	@GetMapping("/doSignUp")
+	@RequestMapping(value="/doSignUp", method=RequestMethod.POST)
 	@ResponseBody
 	public Map<String,Object> doSignUp(Member member) {
 		Map<String,Object> resultMap = Maps.newHashMap();

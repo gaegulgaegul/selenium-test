@@ -59,18 +59,20 @@ function doSignUp(e) {
 			name     : $("#inputName").val(),
 			email    : $('#InputEmail').val(),
 			password : $('#inputPassword').val(),
+			birthday : "20200101",
+			gender   : 1
 		};
 	
 	$.ajax({
 		url: '/doSignUp',
-		type: 'GET',
-		contentType:'application/json',
+		type: 'POST',
 		dataType: "json",
-		data: JSON.springify(member),
+		data: JSON.stringify(member),
+		data: member,
 		success: function (response) {
 			if(response.result == 1){
 				alert('가입 완료');
-				location.replace('./main.html'); // 화면 갱신
+				location.replace('/'); // 화면 갱신
 			} else if(response.result == 0){
 				alert('이미 가입된 아이디입니다');
 			} else if(response.result == -2){
@@ -78,9 +80,6 @@ function doSignUp(e) {
 			} else {
 				alert('등록중에 에러가 발생했습니다');
 			}
-		},
-		error: function(jqXHR, textStatus, errorThrown){
-			alert("arjax error : " + textStatus + "\n" + errorThrown);
 		}
 	});
 }
