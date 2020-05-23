@@ -11,19 +11,19 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
 @Data
 @Table(name="MEMBER")
 @Entity
 public class Member {
 	
 	@Id
-	@Column(name="EMAIL")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long sno;
+	
+	@Column(name="EMAIL")
 	private String email;
 	
 	@Column(name="PASSWORD")
@@ -50,5 +50,16 @@ public class Member {
 		this.birthday = birthday;
 		this.gender = gender;
 		
+	}
+	
+	public String toString() {
+		return "Member={"
+				+ "sno = " + this.sno
+				+ ", email = " + this.email
+				+ ", password=" + this.password
+				+ ", name=" + this.name
+				+ ", birthday=" + this.birthday
+				+ ", gender=" + this.gender
+				+ "}";
 	}
 }

@@ -35,7 +35,8 @@ public class MemberController {
 		Map<String,Object> resultMap = Maps.newHashMap();
 		System.out.println(member.toString());
 		try {
-			memberService.save(member);
+			Member insertMember = memberService.save(member);
+			System.out.println(insertMember.toString());
 			resultMap.put("result", 1);
 		} catch(Exception e) {
 			resultMap.put("result", 99);

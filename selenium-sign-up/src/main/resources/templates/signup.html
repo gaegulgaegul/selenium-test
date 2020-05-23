@@ -55,12 +55,24 @@ function doSignUp(e) {
 		return false;
 	}
 	
+	if($("#inputBirthDay").val() ==''){
+		alert('생년월일을 입력하세요');
+		$("#inputBirthDay").focus();
+		return false;
+	}
+	
+	if(typeof $("#input:radio[name='inputGender']").val() == undefined){
+		alert('성별을 선택하세요');
+		$("input:radio[name='inputGender']").focus();
+		return false;
+	}
+	
 	var member = {
 			name     : $("#inputName").val(),
-			email    : $('#InputEmail').val(),
+			email    : $('#inputEmail').val(),
 			password : $('#inputPassword').val(),
-			birthday : "20200101",
-			gender   : 1
+			birthday : $('#inputBirthDay').val().split("-").join(""),
+			gender   : $('input:radio[name="inputGender"]').val()
 		};
 	
 	$.ajax({
@@ -109,6 +121,15 @@ function doSignUp(e) {
 			<div class="form-group">
 				<label for="inputPasswordCheck">비밀번호 확인</label>
 				<input type="password" class="form-control" id="inputPasswordCheck" placeholder="비밀번호 확인을 위해 다시한번 입력 해 주세요">
+			</div>
+			<div class="form-group">
+				<label for="inputBirthDay">생년월일</label>
+				<input type="text" class="form-control" id="inputBirthDay" placeholder="생년월일을 입력해주세요">
+			</div>
+			<div class="form-group">
+				<label for="inputGender">성별</label><br/>
+				<input type="radio" class="" id="man" name="inputGender" value="1" ><label for="man"> 남자</label>
+				<input type="radio" class="" id="woman" name="inputGender" value="2" ><label for="woman"> 여자</label>
 			</div>
 			<div class="form-group">
 				<label>약관 동의</label>
