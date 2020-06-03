@@ -17,5 +17,5 @@ public class MemberServiceImpl implements MemberService {
 	public Member save(Member member) {
 		return memberRepository.save(member);
 	}
-
+	
 }

@@ -7,5 +7,5 @@ import com.selenium.signup.entity.Member;
 
 @Repository
 public interface MemberRepository extends JpaRepository<Member, Long> {
-
+	
 }
