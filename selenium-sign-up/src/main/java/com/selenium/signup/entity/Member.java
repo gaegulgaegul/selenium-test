@@ -7,26 +7,27 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AccessLevel;
 import lombok.Builder;
-import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Setter
-@Data
-@Table(name="MEMBER")
 @Entity
+@Table(name="MEMBER")
 public class Member {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long sno;
+	private Long id;
 	
-	@Column(name="EMAIL")
+	@Column(name="EMAIL", length=20, nullable=false)
 	private String email;
 	
-	@Column(name="PASSWORD")
+	@Column(name="PASSWORD", length=100, nullable=false)
 	private String password;
 	
 	@Column(name="NAME")
@@ -39,11 +40,13 @@ public class Member {
 	private int gender;
 	
 	@Builder
-	public Member(String email
+	public Member(Long id
+				, String email
 				, String password
 				, String name
 				, String birthday
 				, int gender) {
+		this.id = id;
 		this.email = email;
 		this.password = password;
 		this.name = name;
@@ -54,7 +57,7 @@ public class Member {
 	
 	public String toString() {
 		return "Member={"
-				+ "sno = " + this.sno
+				+ "id = " + this.id
 				+ ", email = " + this.email
 				+ ", password=" + this.password
 				+ ", name=" + this.name
